@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<main class="mw8 w-100 center sans-serif black ph3">
+  <header class="mw7 f4 fw4 lh-copy mb6 measure-wide">
+  {% if page.introduction %}
+    {{ page.introduction | markdownify }}
+  {% endif %}
+  </header>
+</main>
