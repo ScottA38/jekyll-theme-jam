@@ -3,8 +3,6 @@
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-jam.svg)](https://badge.fury.io/rb/jekyll-theme-jam)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/desiredpersona/jekyll-theme-jam/master/LICENSE.md)
 
-View [theme demo](https://desiredpersona.com)
-
 
 ## Installation
 
