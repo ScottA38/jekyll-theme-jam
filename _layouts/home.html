@@ -2,11 +2,11 @@
 layout: default
 ---
 <main class="mw8 w-100 center sans-serif black ph3">
-  <header class="mw7 f5 fw4 lh-copy mb6 black-60 measure-wide avenir">
   {% if page.introduction %}
-    {{ page.introduction | markdownify }}
+    <header class="mw7 f5 fw4 lh-copy mb6 black-60 measure-wide avenir">
+      {{ page.introduction | markdownify }}
+    </header>
   {% endif %}
-  </header>
 
   {% if site.data.theme.text.post_heading %}
     <h2 class="f5 lh-title mb1">{{ site.data.theme.text.post_heading }}</h2>
