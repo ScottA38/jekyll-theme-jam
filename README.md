@@ -32,6 +32,30 @@ Or install it yourself as:
 $ gem install jekyll-theme-jam
 ```
 
+This theme can also be used with [jekyll-remote-theme](https://github.com/benbalter/jekyll-remote-theme).
+To do so:
+  1. Add the gem to your Gemfile under Jekyll-Plugins
+  ```
+  # If you have any plugins, put them here!
+  group :jekyll_plugins do
+      # other plugins...
+      gem "jekyll-remote-theme"
+      # other plugins...
+  end
+  ```
+  2. Specify the repository in the 'remote_theme' tag in `_config.yml`
+    ```
+    remote_theme: desiredpersona/jekyll-theme-jam
+    ```
+
+**N.B:** When using remote-theme and doing style overrides things are a little different. First, make a file `assets/css/jam.scss` (filepath from Jekyll root)
+
+Inside the `jam.scss` file, put the following boilerplate code at the top of the file before defining any style rules
+```
+---
+---
+@import "_theme";
+```
 ## Usage
 
 TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
@@ -51,8 +75,6 @@ Desired Persona
 - [Jekyll](http://jekyllrb.com) static site generator.
 - [Tachyons](http://tachyons.io) functional css for humans.
 - [BrowserStack](https://www.browserstack.com) live, web-based browser testing.
-
-[![browserstack.com](/browserstack-logo.png)](https://www.browserstack.com)
 
 ## Contributing
 
