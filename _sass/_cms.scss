@@ -5,6 +5,12 @@ figure.highlight { margin: .25rem 0;} // Removes 40px left/right margins on code
 
 .link:focus { outline: 0; } // Removes dotted outline on link click.
 
+// Global footer
+body > footer:last-child {
+  position: fixed;
+  bottom: 0;
+}
+
 // Links
 a {
   color: $link;
